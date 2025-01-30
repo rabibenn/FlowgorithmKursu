@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ders_2"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 05:53:50 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDEtMzA7MDU6NDU6MTUgw5ZTOzIwODU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDEtMzA7MDU6NTM6NTAgw5ZTOzE7MjE5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinci say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;&#304;kinci say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <output expression="&quot;1. say&#305;: &quot; &amp; sayi1" newline="True"/>
+            <output expression="&quot;2. say&#305;: &quot; &amp; sayi2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
