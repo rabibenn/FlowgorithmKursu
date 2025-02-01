@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Kullan&#305;c&#305;danAl&#305;nan&#304;kiSay&#305;y&#305;&#199;arpma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 08:50:26 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDEtMzA7MDg6MjU6MzUgw5ZTOzIwODg="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDEtMzA7MDg6NTA6MjYgw5ZTOzE7MjE5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, carpim" type="Integer" array="False" size=""/>
+            <output expression="&quot;1. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;2. say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <assign variable="carpim" expression="sayi1*sayi2"/>
+            <output expression="&quot;Girdi&#287;iniz iki say&#305;n&#305;n &#231;arp&#305;m&#305;:&quot; &amp; carpim" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

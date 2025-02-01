@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="sllsd"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-02 12:33:11 &#214;&#214;"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDEtMzA7MDg6NTE6MzAgw5ZTOzIwODI="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDItMDI7MTI6MzM6MTEgw5bDljsyOzIzMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bolunen, bolen, bolum, kalan" type="Integer" array="False" size=""/>
+            <output expression="&quot;B&#246;l&#252;nen say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="bolunen"/>
+            <output expression="&quot;B&#246;len say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="bolen"/>
+            <assign variable="bolum" expression="bolunen/bolen"/>
+            <assign variable="kalan" expression="bolunen%bolen"/>
+            <output expression="&quot;B&#246;l&#252;m: &quot; &amp; bolum" newline="True"/>
+            <output expression="&quot;Kalan: &quot; &amp; kalan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

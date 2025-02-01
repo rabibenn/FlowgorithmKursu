@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Dikd&#246;rtgenin&#199;evresi"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-02 12:40:53 &#214;&#214;"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDItMDI7MTI6MzQ6MTMgw5bDljsyMjEw"/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDItMDI7MTI6NDA6NTMgw5bDljsxOzIzMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="uzunkenar, kisakenar, cevre, alan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Uzun kenar&#305; giriniz.&quot;" newline="True"/>
+            <input variable="uzunkenar"/>
+            <output expression="&quot;K&#305;sa kenar&#305; giriniz.&quot;" newline="True"/>
+            <input variable="kisakenar"/>
+            <if expression="kisakenar&lt;uzunkenar">
+                <then>
+                    <assign variable="cevre" expression="2*(kisakenar+uzunkenar)"/>
+                    <assign variable="alan" expression="kisakenar*uzunkenar"/>
+                    <output expression="&quot;&#199;evre: &quot; &amp; cevre" newline="True"/>
+                    <output expression="&quot;Alan: &quot; &amp; alan" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;K&#305;sa kenar de&#287;eri uzun kenar de&#287;erinden b&#252;y&#252;k olamaz.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
