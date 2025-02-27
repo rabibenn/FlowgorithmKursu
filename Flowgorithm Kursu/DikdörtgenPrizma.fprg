@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Dikd&#246;rtgenPrizma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-27 06:00:04 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDItMjc7MDQ6NDM6NTcgw5ZTOzIwOTU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDItMjc7MDY6MDA6MDQgw5ZTOzE7MjE5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kisakenar, uzunkenar, yukseklik, tabanalani, yanalalanlartoplami, alan, hacim" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dikd&#246;rtgen prizman&#305;n k&#305;sa kenar&#305;n&#305; yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="kisakenar"/>
+            <output expression="&quot;Dikd&#246;rtgen prizman&#305;n uzun kenar&#305;n&#305; yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="uzunkenar"/>
+            <output expression="&quot;Dikd&#246;rtgen prizman&#305;n y&#252;ksekli&#287;ini yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="yukseklik"/>
+            <assign variable="tabanalani" expression="kisakenar * uzunkenar"/>
+            <assign variable="yanalalanlartoplami" expression="2 * kisakenar * yukseklik + 2 * uzunkenar * yukseklik"/>
+            <assign variable="alan" expression="2 *  kisakenar * uzunkenar + 2 * kisakenar * yukseklik + 2 * uzunkenar * yukseklik"/>
+            <assign variable="hacim" expression="kisakenar * uzunkenar * yukseklik"/>
+            <output expression="&quot;Dikd&#246;rtgen prizman&#305;n taban alan&#305;: &quot; &amp; tabanalani" newline="True"/>
+            <output expression="&quot;Dikd&#246;rtgen prizman&#305;n yanal alanlar&#305; toplam&#305;: &quot; &amp; yanalalanlartoplami" newline="True"/>
+            <output expression="&quot;Dikd&#246;rtgen prizman&#305;n alan&#305;: &quot; &amp; alan" newline="True"/>
+            <output expression="&quot;Dikd&#246;rtgen prizman&#305;n hacmi: &quot; &amp; hacim" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

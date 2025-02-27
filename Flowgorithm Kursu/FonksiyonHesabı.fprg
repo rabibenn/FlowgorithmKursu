@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FonksiyonHesab&#305;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-27 06:06:57 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDItMjc7MDY6MDA6NDMgw5ZTOzIwODU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDItMjc7MDY6MDY6NTcgw5ZTOzE7MjIwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;f(x) = x^3 + 13x^2 + 47x + 5 fonksiyonunun de&#287;erini hesaplamak i&#231;in bir x de&#287;eri giriniz.&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="sonuc" expression="x*x*x + 13*(x*x) + 47*x + 5"/>
+            <output expression="&quot;f(x) = &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

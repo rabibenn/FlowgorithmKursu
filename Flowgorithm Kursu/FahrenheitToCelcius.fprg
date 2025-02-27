@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FahrenheitToCelcius"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-27 04:31:35 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDItMjc7MDQ6MjM6MjMgw5ZTOzIwODY="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDItMjc7MDQ6MzE6MzUgw5ZTOzI7MjE5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="f, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Fahrenheit t&#252;r&#252;nden bir s&#305;cakl&#305;k giriniz.&quot;" newline="True"/>
+            <input variable="f"/>
+            <assign variable="c" expression="(f-32)*5/9"/>
+            <output expression="&quot;Girdi&#287;iniz s&#305;cakl&#305;&#287;&#305;n Celcius t&#252;r&#252;nden de&#287;eri: &quot; &amp; c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

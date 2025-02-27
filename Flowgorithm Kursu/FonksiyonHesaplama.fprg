@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FonksiyonHesapllama"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-27 04:43:08 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDItMjc7MDQ6MzE6NDQgw5ZTOzIwODg="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDItMjc7MDQ6NDM6MDggw5ZTOzE7MjE5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;Fonksiyon hesaplamas&#305; yapmak i&#231;in gerekli bilgileri sizden isteyerek yazd&#305;&#287;&#305;n&#305;z fonksiyonu hesaplayaca&#287;&#305;m.&quot;" newline="True"/>
+            <output expression="&quot;&#214;rnek Fonksiyon =&gt; ax*x + bx + c = F(x)&quot;" newline="True"/>
+            <output expression="&quot;a say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;c say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;x say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="sonuc" expression="a*x*x + b*x + c"/>
+            <output expression="&quot;Verdi&#287;iniz bilgiler ile yaz&#305;lan fonksiyonun sonucu: &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
