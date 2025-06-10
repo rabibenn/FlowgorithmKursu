@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="HavuzHacimSorusu"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-20 09:55:26 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDQtMjA7MDk6NDM6MDcgw5ZTOzIwOTA="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDQtMjA7MDk6NTU6MjYgw5ZTOzE7MjIwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="genislik, boy, yukseklik, metrekup" type="Real" array="False" size=""/>
+            <output expression="&quot;Havuzun geni&#351;li&#287;ini giriniz.&quot;" newline="True"/>
+            <input variable="genislik"/>
+            <output expression="&quot;Havuzun boyunu giriniz.&quot;" newline="True"/>
+            <input variable="boy"/>
+            <output expression="&quot;Havuzun y&#252;ksekli&#287;ini giriniz.&quot;" newline="True"/>
+            <input variable="yukseklik"/>
+            <assign variable="metrekup" expression="genislik * boy * yukseklik"/>
+            <output expression="&quot;Havuzun dolmas&#305; i&#231;in gerekli olan su miktar&#305;: &quot; &amp;metrekup &amp;&quot;metrekup&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

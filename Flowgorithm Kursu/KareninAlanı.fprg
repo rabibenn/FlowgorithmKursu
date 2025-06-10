@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="KareninAlan&#305;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-20 09:34:11 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDQtMjA7MDk6Mjk6NTEgw5ZTOzIwOTM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDQtMjA7MDk6MzQ6MTEgw5ZTOzE7MjE5Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kenar, alan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Alan&#305;n&#305;n hesaplanmas&#305;n&#305; istedi&#287;iniz karenin kenar uzunlu&#287;unu giriniz.&quot;" newline="True"/>
+            <input variable="kenar"/>
+            <assign variable="alan" expression="kenar *  kenar"/>
+            <output expression="&quot;Alan: &quot; &amp; alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

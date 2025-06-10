@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DaireninAlan&#305;Ve&#199;evresi"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-20 09:43:04 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDQtMjA7MDk6Mzc6MjAgw5ZTOzIwODg="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDQtMjA7MDk6NDM6MDQgw5ZTOzE7MjE5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pisayisi, r, alan, cevre" type="Integer" array="False" size=""/>
+            <assign variable="pisayisi" expression="3.14"/>
+            <output expression="&quot;Yar&#305;&#231;ap giriniz.&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="alan" expression="pisayisi * r * r"/>
+            <assign variable="cevre" expression="2 * pisayisi * r"/>
+            <output expression="&quot;Yar&#305;&#231;ap&#305;n&#305; girdi&#287;iniz dairenin alan&#305;: &quot; &amp; alan" newline="True"/>
+            <output expression="&quot;Yar&#305;&#231;ap&#305;n&#305; girdi&#287;iniz dairenin &#231;evresi: &quot; &amp; cevre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

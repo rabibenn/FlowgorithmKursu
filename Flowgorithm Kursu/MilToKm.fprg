@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="MilToKm"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-20 09:37:10 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDQtMjA7MDk6MzQ6MTQgw5ZTOzIwODg="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDQtMjA7MDk6Mzc6MTAgw5ZTOzE7MjE5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mil, km" type="Integer" array="False" size=""/>
+            <output expression="&quot;Arac&#305;n&#305;z&#305;n gitti&#287;i yolu mil cinsinden yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="mil"/>
+            <assign variable="km" expression="mil * 1609"/>
+            <output expression="&quot;Arac&#305;n&#305;z&#305;n gitti&#287;i yol: &quot; &amp;km &amp;&quot;km&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
