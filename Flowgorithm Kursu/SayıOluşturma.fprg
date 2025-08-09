@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Say&#305;Olu&#351;turma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-09 01:48:29 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMDk7MDE6MzU6NTYgw5ZTOzIwOTg="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMDk7MDE6NDg6Mjkgw5ZTOzE7MjIxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Soru: Tek basamakl&#305; &#252;&#231; say&#305; (x, y, z) veriliyor. Bu say&#305;lardan x, y&#252;zler basama&#287;&#305;na; y, onlar basama&#287;&#305;na; z ise birler basama&#287;&#305;na yerle&#351;tirilerek olu&#351;an say&#305;y&#305; bulan algoritmay&#305; yaz&#305;n&#305;z."/>
+            <declare name="x, y, z, olusturulansayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Y&#252;zler basama&#287;&#305;:&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Onlar basama&#287;&#305;:&quot;" newline="True"/>
+            <input variable="y"/>
+            <output expression="&quot;Birler basama&#287;&#305;:&quot;" newline="True"/>
+            <input variable="z"/>
+            <assign variable="olusturulansayi" expression="x * 100 + y * 10 + z * 1"/>
+            <output expression="&quot;Olu&#351;turdu&#287;unuz say&#305;: &quot; &amp;olusturulansayi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
