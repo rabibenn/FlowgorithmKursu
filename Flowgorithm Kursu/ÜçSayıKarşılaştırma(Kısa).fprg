@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#220;&#231;Say&#305;Kar&#351;&#305;la&#351;t&#305;rma(Uzun)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-10 04:13:21 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDM6NTI6MDQgw5ZTOzIwODQ="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDQ6MTM6MjEgw5ZTOzI7MjE5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3 farkl&#305; tam say&#305; al&#305;p en k&#252;&#231;&#252;&#287;&#252;n&#252; ve en b&#252;y&#252;&#287;&#252;n&#252; ekrana yazd&#305;r."/>
+            <declare name="x, y, z, max, min" type="Integer" array="False" size=""/>
+            <output expression="&quot;3 adet say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <input variable="z"/>
+            <assign variable="max" expression="x"/>
+            <if expression="y &gt; max">
+                <then>
+                    <assign variable="max" expression="y"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="z &gt; max">
+                <then>
+                    <assign variable="max" expression="z"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;En b&#252;y&#252;k say&#305;: &quot; &amp;max" newline="True"/>
+            <assign variable="min" expression="x"/>
+            <if expression="y &lt; min">
+                <then>
+                    <assign variable="min" expression="y"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="z &lt; min">
+                <then>
+                    <assign variable="min" expression="z"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;En k&#252;&#231;&#252;k say&#305;: &quot; &amp;min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#304;kiSay&#305;Kar&#351;&#305;la&#351;t&#305;rma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-10 03:51:11 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDM6NDA6MTUgw5ZTOzIwODM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDM6NTE6MTEgw5ZTOzE7MjE4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#304;ki say&#305;y&#305; kar&#351;&#305;la&#351;t&#305;r; e&#351;itse ekrana e&#351;it olduklar&#305;n&#305;, de&#287;ilse hangisinin b&#252;y&#252;k oldu&#287;unu ekrana yazd&#305;r."/>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <declare name="esitmi" type="Boolean" array="False" size=""/>
+            <output expression="&quot;S&#305;ras&#305;yla x ve y say&#305;lar&#305;n&#305; yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <assign variable="esitmi" expression="x == y"/>
+            <if expression="esitmi">
+                <then>
+                    <output expression="&quot;Say&#305;lar&#305;n&#305;z e&#351;it.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x &gt; y">
+                        <then>
+                            <output expression="&quot;x say&#305;s&#305; y say&#305;s&#305;ndan b&#252;y&#252;k.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;y say&#305;s&#305; x say&#305;s&#305;ndan b&#252;y&#252;k.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

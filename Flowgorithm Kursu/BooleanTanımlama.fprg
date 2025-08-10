@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="BooleanTan&#305;mlama"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-10 03:29:22 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDM6MjE6MjUgw5ZTOzIwODM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDM6Mjk6MjIgw5ZTOzE7MjE5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="torf" type="Boolean" array="False" size=""/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="4"/>
+            <assign variable="torf" expression="x &gt; 5"/>
+            <if expression="torf">
+                <then>
+                    <output expression="&quot;Say&#305; 5'ten b&#252;y&#252;k.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305; 5'ten k&#252;&#231;&#252;k.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

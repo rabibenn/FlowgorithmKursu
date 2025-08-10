@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#304;kiSay&#305;n&#305;n&#199;arp&#305;m&#305;n&#305;nPozitifNegatifKontrol&#252;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-10 04:30:33 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDQ6MTk6Mzcgw5ZTOzIwOTQ="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDQ6MzA6MzMgw5ZTOzE7MjE5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="2 tam say&#305; al&#305;p &#231;arp&#305;mlar&#305;n&#305;n pozitif mi negatif mi yoksa 0 m&#305; oldu&#287;unu ekrana yazd&#305;r."/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <declare name="s&#305;f&#305;rm&#305;" type="Boolean" array="False" size=""/>
+            <output expression="&quot;2 adet tam say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="s&#305;f&#305;rm&#305;" expression="a * b = 0"/>
+            <if expression="s&#305;f&#305;rm&#305;">
+                <then>
+                    <output expression="&quot;&#304;ki say&#305;n&#305;n &#231;arp&#305;m&#305; 0.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a * b &gt; 0">
+                        <then>
+                            <output expression="&quot;&#304;ki say&#305;n&#305;n &#231;arp&#305;m&#305; 0'dan b&#252;y&#252;k bu y&#252;zden pozitif.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#304;ki say&#305;n&#305;n &#231;arp&#305;m&#305; 0'dan k&#252;&#231;&#252;k bu y&#252;zden negatif.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

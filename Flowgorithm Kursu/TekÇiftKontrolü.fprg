@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tek&#199;iftKontrol&#252;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-10 03:39:38 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDM6Mjk6MzEgw5ZTOzIwODg="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTA7MDM6Mzk6Mzggw5ZTOzE7MjIwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <declare name="cift" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="cift" expression="sayi % 2 = 0"/>
+            <if expression="cift">
+                <then>
+                    <output expression="&quot;Say&#305;n&#305;z &#231;ift.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z tek.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
