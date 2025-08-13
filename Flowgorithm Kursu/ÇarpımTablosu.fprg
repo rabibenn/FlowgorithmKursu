@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="StringAtama"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 10:53:32 &#214;&#214;"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MTA6MzY6MTkgw5bDljsyMjIz"/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MTA6NTM6MzIgw5bDljs1OzIzMjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="sayi &amp; &quot; * &quot; &amp; i &amp; &quot; = &quot; &amp; sayi * i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

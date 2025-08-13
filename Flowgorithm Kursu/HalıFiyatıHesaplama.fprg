@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="17'ninKatlar&#305;n&#305;Yazd&#305;rma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 08:58:33 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MDQ6MzI6MzEgw5ZTOzIwODU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MDg6NTg6MzMgw5ZTOzQ7MjIxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Bir &#246;&#287;renci evinde &#246;&#287;renciler salonu hal&#305;yla kaplatmak istiyor.&#13;&#10;&#13;&#10;D&#246;&#351;enecek hal&#305;n&#305;n metrekaresi 150TL.&#13;&#10;&#13;&#10;Ayr&#305;ca usta i&#351;&#231;ilik i&#231;in 1000TL almaktad&#305;r.&#13;&#10;&#13;&#10;Bunlar&#305; g&#246;z &#246;n&#252;nde bulundurarak metrekareyi kullan&#305;c&#305;dan al&#305;p &#246;denmesi gereken tutar&#305; hesaplayan program algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="halimetrekare, metrekarefiyati, iscilik, toplam" type="Integer" array="False" size=""/>
+            <assign variable="metrekarefiyati" expression="150"/>
+            <assign variable="iscilik" expression="1000"/>
+            <output expression="&quot;L&#252;tfen hal&#305;n&#305;z&#305;n metrekaresini giriniz.&quot;" newline="True"/>
+            <input variable="halimetrekare"/>
+            <assign variable="toplam" expression="halimetrekare * metrekarefiyati + iscilik"/>
+            <output expression="&quot;Hal&#305;n&#305;z&#305;n metrekaresine g&#246;re i&#351;&#231;ilik dahil(1000TL) &#246;demeniz gereken toplam tutar: &quot; &amp;toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

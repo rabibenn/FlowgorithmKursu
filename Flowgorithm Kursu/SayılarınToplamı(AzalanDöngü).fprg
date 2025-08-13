@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="StringAtama"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 11:14:49 &#214;&#214;"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MTA6MzY6MTkgw5bDljsyMjIz"/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MTE6MTQ6NDkgw5bDljs3OzIzMzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, i, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="sonuc" expression="0"/>
+            <while expression="i &lt;= a">
+                <if expression="i == a">
+                    <then>
+                        <output expression="i" newline="False"/>
+                    </then>
+                    <else>
+                        <output expression="i &amp; &quot; + &quot;" newline="False"/>
+                    </else>
+                </if>
+                <assign variable="sonuc" expression="sonuc + i"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="&quot; = &quot; &amp; sonuc" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

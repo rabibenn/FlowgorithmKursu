@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="17'ninKatlar&#305;n&#305;Yazd&#305;rma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 08:58:13 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MDQ6MzI6MzEgw5ZTOzIwODU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MDg6NTg6MTMgw5ZTOzU7MjIwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Bir hal&#305;c&#305; &#231;ocuklar i&#231;in 3 ayr&#305; tipte hal&#305; satmaktad&#305;r.&#13;&#10;&#13;&#10;Tweety tipi hal&#305;n&#305;n kodu T ve metrekare birim fiyat&#305; 18TL'dir.&#13;&#10;Bugs tipi hal&#305;n&#305;n kodu B ve metrekare birim fiyat&#305; 17TL'dir.&#13;&#10;Spiderman tipi hal&#305;n&#305;n kodu S ve metrekare birim fiyat&#305; 19TL'dir.&#13;&#10;&#13;&#10;Bunlar&#305; g&#246;z &#246;n&#252;nde bulundurarak hal&#305; tipini ve metrekareyi kullan&#305;c&#305;dan al&#305;p &#246;denmesi gereken tutar&#305; hesaplayan program algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="kod" type="String" array="False" size=""/>
+            <declare name="metrekare, tutar" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen istedi&#287;iniz hal&#305; tipinin kodunu giriniz.&quot;" newline="True"/>
+            <input variable="kod"/>
+            <output expression="&quot;L&#252;tfen hal&#305;n&#305;z&#305;n metrekaresini giriniz.&quot;" newline="True"/>
+            <input variable="metrekare"/>
+            <if expression="kod = &quot;T&quot;">
+                <then>
+                    <assign variable="tutar" expression="metrekare * 18"/>
+                    <output expression="&quot;Hal&#305;n&#305;z&#305;n tipine ve metrekaresine g&#246;re &#246;demeniz gereken toplam tutar: &quot; &amp;tutar" newline="True"/>
+                </then>
+                <else>
+                    <if expression="kod = &quot;B&quot;">
+                        <then>
+                            <assign variable="tutar" expression="metrekare * 17"/>
+                            <output expression="&quot;Hal&#305;n&#305;z&#305;n tipine ve metrekaresine g&#246;re &#246;demeniz gereken toplam tutar: &quot; &amp;tutar" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="kod = &quot;S&quot;">
+                                <then>
+                                    <assign variable="tutar" expression="metrekare * 19"/>
+                                    <output expression="&quot;Hal&#305;n&#305;z&#305;n tipine ve metrekaresine g&#246;re &#246;demeniz gereken toplam tutar: &quot; &amp;tutar" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#252;tfen ge&#231;erli bir kod giriniz.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

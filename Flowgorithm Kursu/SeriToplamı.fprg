@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="SeriToplam&#305;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 09:44:53 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MDk6Mjc6MTggw5ZTOzIwOTk="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MDk6NDQ6NTMgw5ZTOzE7MjIwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Kullan&#305;c&#305;dan al&#305;nan n say&#305;s&#305; ile &quot;1 + 1/2 + ... + 1/n&quot; de&#287;erini hesaplayan program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="n, i, sonuc" type="Real" array="False" size=""/>
+            <output expression="&quot;Bir n say&#305;s&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="sonuc" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="sonuc" expression="sonuc + 1/i"/>
+            </for>
+            <output expression="&quot;Sonucunuz: &quot; &amp;sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="13ve17'yeB&#246;l&#252;nmeKontrol&#252;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 09:26:33 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MDg6NTg6MzYgw5ZTOzIxMDI="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MDk6MjY6MzMgw5ZTOzE7MjIwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Kullan&#305;c&#305;dan pozitif bir say&#305;y&#305; girdi olarak al&#305;p bu say&#305;n&#305;n 13 ve veya 17'ye b&#246;l&#252;n&#252;p b&#246;l&#252;nmedi&#287;ini kontrol eden ve bunu ekrana yazd&#305;ran program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Pozitif bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi % 13 = 0 &amp;&amp; sayi % 17 = 0">
+                <then>
+                    <output expression="&quot;Say&#305;n&#305;z hem 13 hem de 17 say&#305;lar&#305;na b&#246;l&#252;n&#252;yor.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sayi % 13 = 0">
+                        <then>
+                            <output expression="&quot;Say&#305;n&#305;z 13 say&#305;s&#305;na b&#246;l&#252;n&#252;yor.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="sayi % 17 = 0">
+                                <then>
+                                    <output expression="&quot;Say&#305;n&#305;z 17 say&#305;s&#305;na b&#246;l&#252;n&#252;yor.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Say&#305;n&#305;z 13 ve 17 say&#305;lar&#305;na b&#246;l&#252;nm&#252;yor.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

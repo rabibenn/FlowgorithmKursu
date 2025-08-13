@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1'den10'a(for)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-12 10:35:16 &#214;&#214;"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MDk6NTY6MTQgw5bDljsyMjI4"/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MTA6MjE6MTIgw5bDljsxO1JhYmk7UkFCSTsyMDI1LTA4LTEyOzA5OjU2OjE0IMOWw5Y7MSdkZW4xMCdhKHdoaWxlKS5mcHJnOzYzOTE="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTI7MTA6MzU6MTYgw5bDljs5OzIzMzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, sayi, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi &gt; 0">
+                <then>
+                    <do expression="i &lt;= sayi">
+                        <assign variable="toplam" expression="toplam + i"/>
+                        <assign variable="i" expression="i + 1"/>
+                    </do>
+                </then>
+                <else>
+                    <output expression="&quot;L&#252;tfen pozitif bir say&#305; giriniz.&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;1'den girdi&#287;iniz say&#305;ya kadar olan say&#305;lar&#305;n toplam&#305;: &quot; &amp;toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
