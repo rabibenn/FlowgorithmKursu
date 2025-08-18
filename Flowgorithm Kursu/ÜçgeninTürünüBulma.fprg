@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#220;&#231;geninT&#252;r&#252;n&#252;Bulma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-13 05:02:42 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTM7MDQ6NDg6MDMgw5ZTOzIwOTI="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTM7MDU6MDI6NDIgw5ZTOzI7MjE5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#220;&#231;genin i&#231; i&#231;a&#305;lar&#305;n&#305; alarak a&#231;&#305;lara g&#246;re bunun bir &#252;&#231;gen olup olmad&#305;&#287;&#305;n&#305; kontrol eden ve &#252;&#231;genin t&#252;r&#252;n&#252; belirleyip ekrana yazd&#305;ran program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="aci1, aci2, aci3, icacitoplami" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen &#252;&#231;geninizin i&#231; a&#231;&#305;lar&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="aci1"/>
+            <input variable="aci2"/>
+            <input variable="aci3"/>
+            <assign variable="icacitoplami" expression="aci1 + aci2 + aci3"/>
+            <if expression="icacitoplami = 180">
+                <then>
+                    <if expression="aci1 == 60 &amp;&amp; aci2 == 60 &amp;&amp; aci3 == 60">
+                        <then>
+                            <output expression="&quot;Girdi&#287;iniz a&#231;&#305;lara g&#246;re &#252;&#231;geniniz e&#351;kenar &#252;&#231;gendir.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="aci1 == aci2 || aci1 == aci3 || aci2 == aci3">
+                                <then>
+                                    <output expression="&quot;Girdi&#287;iniz a&#231;&#305;lara g&#246;re &#252;&#231;geniniz ikizkenar &#252;&#231;gendir.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Girdi&#287;iniz a&#231;&#305;lara g&#246;re &#252;&#231;geniniz &#231;e&#351;itkenar &#252;&#231;gendir.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Girdi&#287;iniz a&#231;&#305;lar&#305; kontrol edin i&#231; a&#231;&#305;lar toplam&#305; 180 olmal&#305;d&#305;r.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

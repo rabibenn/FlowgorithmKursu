@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M&#252;kemmelSay&#305;Kontrol&#252;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-18 07:16:10 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MzU6MDMgw5ZTOzIwOTU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDc6MDY6MTQgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MjM6MDMgw5ZTO0FybXN0cm9uZ1NhecSxS29udHJvbMO8LmZwcmc7NzQ1MQ=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDc6MTY6MTAgw5ZTOzI7MjIwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Say&#305;lar teorisinde kendisi hari&#231; pozitif tam b&#246;lenleri toplam&#305; kendiaine e&#351;it olan say&#305;lar m&#252;kemmel say&#305;d&#305;r."/>
+            <declare name="sayi, i, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <output expression="&quot;L&#252;tfen bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="i" start="1" end="sayi/2" direction="inc" step="1">
+                <if expression="sayi % i == 0">
+                    <then>
+                        <assign variable="toplam" expression="toplam + i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="sayi == toplam">
+                <then>
+                    <output expression="&quot;Say&#305;n&#305;z m&#252;kemmel say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z m&#252;kemmel say&#305; de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

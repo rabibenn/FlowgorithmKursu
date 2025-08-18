@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#220;sAlma(while)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-18 06:20:01 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MDQ6MDUgw5ZTOzIwOTM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MjA6MDEgw5ZTOzI7MjE5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="us, taban, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#220;sl&#252; say&#305;n&#305;z&#305;n taban&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="taban"/>
+            <output expression="&quot;&#220;sl&#252; say&#305;n&#305;z&#305;n &#252;ss&#252;n&#252; giriniz.&quot;" newline="True"/>
+            <input variable="us"/>
+            <assign variable="sonuc" expression="1"/>
+            <while expression="us != 0">
+                <assign variable="sonuc" expression="sonuc * taban"/>
+                <assign variable="us" expression="us - 1"/>
+            </while>
+            <output expression="&quot;Girdi&#287;iniz &#252;sl&#252; say&#305;n&#305;n sonucu: &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#304;stenilenSay&#305;daAsalSay&#305;Bulma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-18 07:39:30 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDc6MzQ6MDUgw5ZTOzIwOTc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDc6MzQ6MjYgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MzU6Mzggw5ZTO0FzYWxTYXnEsUtvbnRyb2zDvC5mcHJnOzY4OTQ="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDc6Mzk6MzAgw5ZTOzI7MjIwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i, istenilen, bulunan" type="Integer" array="False" size=""/>
+            <assign variable="bulunan" expression="0"/>
+            <declare name="asalmi" type="Boolean" array="False" size=""/>
+            <assign variable="asalmi" expression="true"/>
+            <output expression="&quot;Ka&#231; tane asal say&#305; istiyorsunuz.&quot;" newline="True"/>
+            <input variable="istenilen"/>
+            <assign variable="sayi" expression="2"/>
+            <while expression="bulunan&lt;istenilen">
+                <assign variable="asalmi" expression="true"/>
+                <for variable="i" start="2" end="sayi/2" direction="inc" step="1">
+                    <if expression="sayi % i == 0">
+                        <then>
+                            <assign variable="asalmi" expression="false"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="asalmi == true">
+                    <then>
+                        <output expression="sayi" newline="True"/>
+                        <assign variable="bulunan" expression="bulunan + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayi" expression="sayi + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

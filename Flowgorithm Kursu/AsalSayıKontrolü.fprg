@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="AsalSay&#305;Kontrol&#252;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-18 07:33:30 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MzU6Mzggw5ZTOzIxMDM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDc6MzA6MzAgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6Mzc6NTAgw5ZTO0FzYWzDh2FycGFuQnVsbWEuZnByZzs2NTA0"/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDc6MzM6MzAgw5ZTOzI7MjIwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i" type="Integer" array="False" size=""/>
+            <declare name="asalmi" type="Boolean" array="False" size=""/>
+            <assign variable="asalmi" expression="true"/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="i" start="2" end="sayi/2" direction="inc" step="1">
+                <if expression="sayi % i == 0">
+                    <then>
+                        <assign variable="asalmi" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="asalmi == true">
+                <then>
+                    <output expression="&quot;Say&#305;n&#305;z asal say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z asal say&#305; de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

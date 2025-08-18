@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="EBOB"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-18 06:03:40 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTQ7MDQ6NDE6MDcgw5ZTOzIwOTA="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MDM6NDAgw5ZTOzI7MjIwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Girilen 2 say&#305;n&#305;n ebob de&#287;erini bulan program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="sayi1, sayi2, i, buyuksayi, kucuksayi, ebob" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen eboblar&#305;n&#305;n hesaplanmas&#305;n&#305; istedi&#287;iniz iki say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <input variable="sayi2"/>
+            <if expression="sayi2 &gt; sayi1">
+                <then>
+                    <assign variable="buyuksayi" expression="sayi2"/>
+                    <assign variable="kucuksayi" expression="sayi1"/>
+                </then>
+                <else/>
+            </if>
+            <for variable="i" start="1" end="buyuksayi" direction="inc" step="1">
+                <if expression="kucuksayi % i == 0 &amp;&amp; buyuksayi % i == 0">
+                    <then>
+                        <assign variable="ebob" expression="i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Girdi&#287;iniz iki say&#305;n&#305;n en b&#252;y&#252;k ortak b&#246;leni: &quot; &amp; ebob" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

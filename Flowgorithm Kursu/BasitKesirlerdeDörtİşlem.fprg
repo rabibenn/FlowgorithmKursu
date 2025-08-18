@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="BasitKesirlerdeD&#246;rt&#304;&#351;lem"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-13 09:51:30 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTM7MDQ6NDg6MDggw5ZTOzIwOTc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTM7MDk6NTE6MzAgw5ZTOzI7MjIwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Basit Kesirlerde &#304;&#351;lem&#13;&#10;&#13;&#10;A&#351;a&#287;&#305;da belirtilen i&#351;lemleri yapan program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z.&#13;&#10;&#13;&#10;-Kullan&#305;c&#305;dan a ve b olmak &#252;zere olmak &#252;zere iki say&#305; al&#305;n&#305;z.&#13;&#10;-Toplama veya &#231;&#305;karma operat&#246;r&#252; giriniz.&#13;&#10;-&quot;+&quot; operat&#246;r&#252; i&#231;in 1/a+1/b, &quot;-&quot; operat&#246;r&#252; i&#231;in 1/a-1/b i&#351;lemlerinin sonucunu basit kesir cinsinden bulunuz.&#13;&#10;-Girilen a veya b de&#287;erlerinden biri 0 ise i&#351;lemin yap&#305;lamayaca&#287;&#305;n&#305; ekrana yazd&#305;r&#305;n.&#13;&#10;&#13;&#10;&#214;rnek &#199;&#305;kt&#305;:&#13;&#10;&#304;&#351;leminizi se&#231;iniz(+,-).&#13;&#10;+ &#13;&#10;&#304;ki tam say&#305; giriniz.&#13;&#10;5&#13;&#10;8 &#13;&#10;1/5 + 1/8 = 13/40"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <declare name="op" type="String" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen bir operat&#246;r se&#231;iniz. (+,-)&quot;" newline="True"/>
+            <input variable="op"/>
+            <if expression="op = &quot;+&quot;">
+                <then>
+                    <output expression="&quot;L&#252;tfen 0'dan b&#252;y&#252;k iki adet say&#305; giriniz.&quot;" newline="True"/>
+                    <input variable="a"/>
+                    <input variable="b"/>
+                    <if expression="a &gt; 0 &amp;&amp; b &gt; 0">
+                        <then>
+                            <output expression="&quot;1/&quot;&amp;a&amp;op&amp;&quot;1/&quot;&amp;b&amp;&quot; = &quot; &amp;a+b &amp;&quot; / &quot; &amp;a*b" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Payda 0 olamaz.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="op = &quot;-&quot;">
+                        <then>
+                            <output expression="&quot;L&#252;tfen 0'dan b&#252;y&#252;k iki adet say&#305; giriniz.&quot;" newline="True"/>
+                            <input variable="a"/>
+                            <input variable="b"/>
+                            <if expression="a &gt; 0 &amp;&amp; b &gt; 0">
+                                <then>
+                                    <output expression="&quot;1/&quot;&amp;a&amp;op&amp;&quot;1/&quot;&amp;b&amp;&quot; = &quot; &amp;a-b &amp;&quot; / &quot; &amp;a*b" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Payda 0 olamaz.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#252;tfen ge&#231;erli bir operat&#246;r giriniz.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

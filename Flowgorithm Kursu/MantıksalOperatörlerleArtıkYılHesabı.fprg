@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Art&#305;kY&#305;lHesab&#305;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-13 04:45:18 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTM7MDI6MTM6NDMgw5ZTOzIwODY="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTM7MDQ6NDU6MTggw5ZTOzM7MjIwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Art&#305;k Y&#305;l Hesab&#305;&#13;&#10;&#13;&#10;4 ile b&#246;l&#252;nebilen say&#305;lar art&#305;k y&#305;llard&#305;r. (00 ile bitenler hari&#231;)&#13;&#10;400 ile b&#246;l&#252;nenler de art&#305;k y&#305;ld&#305;r.&#13;&#10;&#13;&#10;Girilen y&#305;l&#305;n art&#305;k y&#305;l olup olmad&#305;&#287;&#305;n&#305; mant&#305;ksal operat&#246;rleri kullanarak bulan ve ekrana yazd&#305;ran program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="yil" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen bir y&#305;l giriniz.&quot;" newline="True"/>
+            <input variable="yil"/>
+            <if expression="(yil % 400 = 0) || (yil % 4 = 0) &amp;&amp; (yil % 100 != 0)">
+                <then>
+                    <output expression="yil &amp; &quot; art&#305;k y&#305;ld&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="yil &amp; &quot; art&#305;k y&#305;l de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

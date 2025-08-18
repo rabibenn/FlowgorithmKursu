@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TelefonG&#246;r&#252;&#351;me&#220;cretiniHesaplama"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-13 06:14:37 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTM7MDQ6NDg6MDUgw5ZTOzIwOTQ="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTM7MDY6MTQ6Mzcgw5ZTOzI7MjIwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Bir telefon &#351;irketi telefonda 3 dakikaya kadar olan konu&#351;man&#305;n &#252;cretini 4TL olaak belirlemi&#351;tir. Ancak &#351;irket konu&#351;ma 3 dakikay&#305; a&#351;t&#305;&#287;&#305; durumda bundan sonraki her dakika i&#231;in ek olarak 1TL almaktad&#305;r. Telefon g&#246;r&#252;&#351;mesinin s&#252;resini alarak konu&#351;man&#305;n &#252;cretini hesaplayan program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="sure, ekstrasure, ucret" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen konu&#351;ma s&#252;resini dakika cinsinden giriniz.&quot;" newline="True"/>
+            <input variable="sure"/>
+            <if expression="sure &gt; 3">
+                <then>
+                    <assign variable="ekstrasure" expression="sure - 3"/>
+                    <assign variable="ucret" expression="4 + ekstrasure"/>
+                    <output expression="&quot;Konu&#351;ma s&#252;resi: &quot; &amp; sure &amp; &quot;dk&quot;" newline="True"/>
+                    <output expression="&quot;&#220;cret: &quot; &amp; ucret &amp; &quot;TL&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="ucret" expression="4"/>
+                    <output expression="&quot;Konu&#351;ma s&#252;resi: &quot; &amp; sure &amp; &quot;dk&quot;" newline="True"/>
+                    <output expression="&quot;&#220;cret: &quot; &amp; ucret &amp; &quot;TL&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

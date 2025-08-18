@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Asal&#199;arpanBulma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-18 07:21:38 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6Mzc6NTAgw5ZTOzIwOTk="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDc6MTc6MTggw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MzU6MDMgw5ZTO03DvGtlbW1lbFNhecSxS29udHJvbMO8LmZwcmc7NzQ2Nw=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDc6MjE6Mzggw5ZTOzM7MjIwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, bolen" type="Integer" array="False" size=""/>
+            <output expression="&quot;Asal &#231;arpanlar&#305;n&#305; bulmak istedi&#287;iniz say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="bolen" expression="2"/>
+            <while expression="sayi &gt; 1">
+                <if expression="sayi % bolen == 0">
+                    <then>
+                        <assign variable="sayi" expression="sayi / bolen"/>
+                        <output expression="bolen" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="bolen" expression="bolen + 1"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

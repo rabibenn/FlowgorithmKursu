@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tav&#351;anKu&#351;Sorusu"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-18 05:44:01 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTQ7MDQ6MjY6MjIgw5ZTOzIwOTA="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDU6NDQ6MDEgw5ZTOzI7MjIwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Bir &#231;iftlikte tav&#351;anlar&#305;n say&#305;s&#305; 1042 iken ku&#351;lar&#305;n say&#305;s&#305; 2272'dir. Bir y&#305;lda tav&#351;anlar %3.8 oran&#305;nda &#231;o&#287;al&#305;rken, ku&#351;lar %1.2 oran&#305;nda &#231;o&#287;almaktad&#305;r.&#13;&#10;&#13;&#10;Tav&#351;anlar&#305;n ku&#351;lar&#305;n say&#305;s&#305;n&#305; ka&#231; y&#305;l sonra ge&#231;ece&#287;ini bulan program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="tavsan, kus, tavsancogalma, kuscogalma, yil" type="Integer" array="False" size=""/>
+            <assign variable="tavsan" expression="1042"/>
+            <assign variable="kus" expression="2272"/>
+            <assign variable="yil" expression="0"/>
+            <while expression="tavsan &lt;= kus">
+                <assign variable="tavsan" expression="tavsan + (tavsan * 0.038)"/>
+                <assign variable="kus" expression="kus + (kus * 0.012)"/>
+                <assign variable="yil" expression="yil + 1"/>
+            </while>
+            <output expression="yil &amp; &quot; y&#305;l sonra tav&#351;an say&#305;s&#305; ku&#351; say&#305;s&#305;ndan fazla olur.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

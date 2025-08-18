@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PalendromSay&#305;Kontrol&#252;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-18 06:59:49 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MjA6MjQgw5ZTOzIwOTI="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6NTk6NDkgw5ZTOzM7MjIyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Tersi kendisine e&#351;it olan say&#305;lar palendrom say&#305;lard&#305;r."/>
+            <declare name="sayi, kalan, ters, baslangicsayi" type="Integer" array="False" size=""/>
+            <assign variable="ters" expression="0"/>
+            <output expression="&quot;L&#252;tfen bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="baslangicsayi" expression="sayi"/>
+            <while expression="sayi != 0">
+                <assign variable="kalan" expression="sayi %  10"/>
+                <assign variable="ters" expression="ters* 10 + kalan"/>
+                <assign variable="sayi" expression="sayi / 10"/>
+            </while>
+            <output expression="&quot;Say&#305;n&#305;z&#305;n tersi: &quot; &amp; ters" newline="True"/>
+            <if expression="baslangicsayi == ters">
+                <then>
+                    <output expression="&quot;Say&#305;n&#305;z palendrom say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z palendrom say&#305; de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

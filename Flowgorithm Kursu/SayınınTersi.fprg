@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Say&#305;n&#305;nTersi"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-14 04:40:44 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTQ7MDQ6MzQ6MTAgw5ZTOzIwODY="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTQ7MDQ6NDA6NDQgw5ZTOzE7MjE5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Kullan&#305;c&#305;n&#305;n girdi&#287;i bir say&#305;y&#305; ters &#231;evirip ekrana bast&#305;ran program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="sayi, kalan, terssayi" type="Integer" array="False" size=""/>
+            <assign variable="terssayi" expression="0"/>
+            <output expression="&quot;L&#252;tfen bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi != 0">
+                <assign variable="kalan" expression="sayi % 10"/>
+                <assign variable="terssayi" expression="terssayi * 10 + kalan"/>
+                <assign variable="sayi" expression="sayi / 10"/>
+            </while>
+            <output expression="&quot;Say&#305;n&#305;z&#305;n ters &#231;evrilmi&#351; hali: &quot; &amp;terssayi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

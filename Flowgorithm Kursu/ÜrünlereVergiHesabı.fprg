@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#220;r&#252;nlereVergiHesab&#305;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-18 05:54:23 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTQ7MDQ6Mjk6MTcgw5ZTOzIwOTc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDU6NTQ6MjMgw5ZTOzI7MjIwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Kitap, temel g&#305;da ve l&#252;ks kategori olarak 3 grup &#252;r&#252;ne devlet farkl&#305; oranlarda vergiler uyguluyor.&#13;&#10;&#13;&#10;Kitap(0) -&gt; %4.0&#13;&#10;Temel G&#305;da(1) -&gt; %5.6&#13;&#10;L&#252;ks &#220;r&#252;n(2) -&gt; %19.6&#13;&#10;&#13;&#10;&#220;r&#252;n&#252;n &#246;nce kodunu sonra fiyat&#305;n&#305; isteyip vergi uyguland&#305;ktan sonraki fiyat&#305; ekrana bast&#305;ran program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z.&#13;&#10;&#13;&#10;"/>
+            <declare name="kod, urunfiyati, vergilifiyat" type="Real" array="False" size=""/>
+            <output expression="&quot;Kitap -&gt; 0&quot;" newline="True"/>
+            <output expression="&quot;Temel G&#305;da -&gt; 1&quot;" newline="True"/>
+            <output expression="&quot;L&#252;ks &#252;r&#252;n -&gt; 2&quot;" newline="True"/>
+            <output expression="&quot;L&#252;tfen &#252;r&#252;n kodunu giriniz.&quot;" newline="True"/>
+            <input variable="kod"/>
+            <output expression="&quot;L&#252;tfen &#252;r&#252;n&#252;n fiyat&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="urunfiyati"/>
+            <if expression="kod = 0">
+                <then>
+                    <assign variable="vergilifiyat" expression="urunfiyati + (urunfiyati * 0.04)"/>
+                    <output expression="&quot;&#220;r&#252;n&#252;n vergili fiyat&#305;: &quot; &amp; vergilifiyat &amp; &quot;TL&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="kod = 1">
+                        <then>
+                            <assign variable="vergilifiyat" expression="urunfiyati + (urunfiyati * 0.056)"/>
+                            <output expression="&quot;&#220;r&#252;n&#252;n vergili fiyat&#305;: &quot; &amp; vergilifiyat &amp; &quot;TL&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="kod = 2">
+                                <then>
+                                    <assign variable="vergilifiyat" expression="urunfiyati + (urunfiyati * 0.196)"/>
+                                    <output expression="&quot;&#220;r&#252;n&#252;n vergili fiyat&#305;: &quot; &amp; vergilifiyat &amp; &quot;TL&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Girdi&#287;iniz kod bir &#252;r&#252;ne ait de&#287;il.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
