@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="String&#304;fadeninTersiniYazd&#305;rma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 07:36:29 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6NDUgw5ZTOzIxMDA="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzM6NDMgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDY6NTg6Mjkgw5ZTO0xlbigpLmZwcmc7NTI3OQ=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzY6Mjkgw5ZTOzI7MjIxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="isim, tersi" type="String" array="False" size=""/>
+            <assign variable="isim" expression="&quot;Rabia Sultan Ayd&#305;n&quot;"/>
+            <assign variable="tersi" expression="&quot; &quot;"/>
+            <for variable="i" start="0" end="Len(isim)-1" direction="inc" step="1">
+                <assign variable="tersi" expression="Char(isim, i) &amp; tersi"/>
+            </for>
+            <output expression="tersi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

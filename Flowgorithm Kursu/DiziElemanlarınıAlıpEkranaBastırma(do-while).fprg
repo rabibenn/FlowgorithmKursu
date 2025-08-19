@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DiziElemanlar&#305;n&#305;Al&#305;pEkranaBast&#305;rma(do-while)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 05:19:42 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDU6MTg6MzEgw5ZTOzIwOTc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDU6MTg6MzMgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDU6MTM6NDkgw5ZTO0RpemlFbGVtYW5sYXLEsW7EsUFsxLFwRWtyYW5hQmFzdMSxcm1hKHdoaWxlKS5mcHJnOzk3NTc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDU6MTk6NDIgw5ZTOzE7MjIwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="dizim" type="Integer" array="True" size="5"/>
+            <assign variable="i" expression="0"/>
+            <do expression="i &lt; 5">
+                <output expression="i+1 &amp; &quot;. eleman&#305; giriniz.&quot;" newline="True"/>
+                <input variable="dizim[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+            <assign variable="i" expression="0"/>
+            <do expression="i &lt; 5">
+                <output expression="i+1 &amp; &quot;. eleman&#305;m: &quot;" newline="False"/>
+                <output expression="dizim[i]" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

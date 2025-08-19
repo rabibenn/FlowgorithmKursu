@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Rastgele&#350;ifreOlu&#351;turma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 07:47:54 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6NTAgw5ZTOzIwOTY="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6NDA6Mjkgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6NDcgw5ZTO1Jhc3RnZWxlSGFyZmxlcmRlbktlbGltZU9sdcWfdHVybWEuZnByZzs4NTU1"/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6NDc6NTQgw5ZTOzI7MjIxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="asciikodu, i" type="Integer" array="False" size=""/>
+            <declare name="message, sifre, karakter" type="String" array="False" size=""/>
+            <assign variable="message" expression="&quot;Hello&quot;"/>
+            <assign variable="sifre" expression="&quot; &quot;"/>
+            <for variable="i" start="0" end="Len(message)-1" direction="inc" step="1">
+                <assign variable="karakter" expression="Char(message,i)"/>
+                <assign variable="asciikodu" expression="ToCode(karakter)"/>
+                <assign variable="asciikodu" expression="asciikodu + Random(20)"/>
+                <assign variable="karakter" expression="ToChar(asciikodu)"/>
+                <assign variable="sifre" expression="sifre &amp; karakter"/>
+            </for>
+            <output expression="&quot;&#350;ifreniz: &quot; &amp; sifre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

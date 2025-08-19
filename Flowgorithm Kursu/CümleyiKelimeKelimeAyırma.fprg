@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="C&#252;mleyiKelimeKelimeAy&#305;rma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 08:04:27 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6MTQgw5ZTOzIwOTY="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDg6MDQ6Mjcgw5ZTOzI7MjIwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="cumle, kelime" type="String" array="False" size=""/>
+            <assign variable="cumle" expression="&quot;Programlamay&#305; &#231;ok seviyorum.&quot;"/>
+            <assign variable="kelime" expression="&quot; &quot;"/>
+            <for variable="i" start="0" end="Len(cumle)-1" direction="inc" step="1">
+                <if expression="Char(cumle,i) != &quot; &quot;">
+                    <then>
+                        <assign variable="kelime" expression="kelime &amp; Char(cumle,i)"/>
+                        <if expression="Char(cumle,i) == &quot;.&quot;">
+                            <then>
+                                <output expression="kelime" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="kelime" newline="True"/>
+                        <assign variable="kelime" expression="&quot; &quot;"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

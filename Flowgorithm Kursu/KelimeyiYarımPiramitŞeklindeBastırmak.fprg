@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="KelimeyiYar&#305;mPiramit&#350;eklindeBast&#305;rmak"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 08:18:24 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6Mzcgw5ZTOzIxMDE="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDg6MTQ6NTYgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDY6MDg6NDAgw5ZTO1nEsWxkxLF6S3VsbGFuYXJha1lhcsSxbVBpcmFtaXRPbHXFn3R1cm1hLmZwcmc7OTYxMA=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDg6MTg6MjQgw5ZTOzI7MjIxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j" type="Integer" array="False" size=""/>
+            <declare name="kelime" type="String" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen bir kelime giriniz.&quot;" newline="True"/>
+            <input variable="kelime"/>
+            <for variable="i" start="1" end="Len(kelime)-1" direction="inc" step="1">
+                <for variable="j" start="0" end="i" direction="inc" step="1">
+                    <output expression="Char(kelime, j) &amp; &quot; &quot;" newline="False"/>
+                </for>
+                <output expression="&quot; &quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

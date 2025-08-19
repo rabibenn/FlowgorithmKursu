@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="C&#252;mledekiKelimeSay&#305;s&#305;n&#305;Bulma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 08:22:12 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6Mzkgw5ZTOzIxMDM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDg6MTg6NTggw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6MzQgw5ZTO0thcmFrdGVyaW5LYcOnS2V6S3VsbGFuxLFsZMSxxJ/EsW7EsUJ1bG1hLmZwcmc7OTU4NA=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDg6MjI6MTIgw5ZTOzI7MjIwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, sayac" type="Integer" array="False" size=""/>
+            <declare name="message" type="String" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <output expression="&quot;L&#252;tfen bir c&#252;mle giriniz.&quot;" newline="True"/>
+            <input variable="message"/>
+            <for variable="i" start="0" end="Len(message)-1" direction="inc" step="1">
+                <if expression="Char(message,i) == &quot; &quot;">
+                    <then>
+                        <assign variable="sayac" expression="sayac+1"/>
+                    </then>
+                    <else>
+                        <if expression="Char(message,i) == &quot;.&quot;">
+                            <then>
+                                <assign variable="sayac" expression="sayac+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Girmi&#351; oldu&#287;unuz c&#252;mledeki kelime say&#305;s&#305;: &quot; &amp; sayac" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="HarfSay&#305;s&#305;Bulma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 08:39:55 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6NDIgw5ZTOzIwOTc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDg6MjI6NTQgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6Mzkgw5ZTO0PDvG1sZWRla2lLZWxpbWVTYXnEsXPEsW7EsUJ1bG1hLmZwcmc7ODQ5Mw=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDg6Mzk6NTUgw5ZTOzI7MjIxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, harfsayisi, bosluksayisi, sayisayisi" type="Integer" array="False" size=""/>
+            <declare name="message" type="String" array="False" size=""/>
+            <assign variable="sayisayisi" expression="0"/>
+            <assign variable="harfsayisi" expression="0"/>
+            <assign variable="bosluksayisi" expression="0"/>
+            <output expression="&quot;L&#252;tfen bir yaz&#305; yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="message"/>
+            <for variable="i" start="0" end="Len(message)-1" direction="inc" step="1">
+                <if expression="(ToCode(Char(message,i)) &gt;= ToCode(&quot;a&quot;) &amp;&amp; ToCode(Char(message,i)) &lt;= ToCode(&quot;z&quot;) || ToCode(Char(message,i)) &gt;= ToCode(&quot;A&quot;) &amp;&amp; ToCode(Char(message,i)) &lt;= ToCode(&quot;Z&quot;))">
+                    <then>
+                        <comment text="T&#252;rk&#231;e karakterleri saym&#305;yor."/>
+                        <assign variable="harfsayisi" expression="harfsayisi+1"/>
+                    </then>
+                    <else>
+                        <if expression="ToCode(Char(message,i)) &gt;= ToCode(&quot;0&quot;) &amp;&amp; ToCode(Char(message,i)) &lt;= ToCode(&quot;9&quot;)">
+                            <then>
+                                <assign variable="sayisayisi" expression="sayisayisi+1"/>
+                            </then>
+                            <else>
+                                <if expression="Char(message,i) == &quot; &quot;">
+                                    <then>
+                                        <assign variable="bosluksayisi" expression="bosluksayisi+1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Harf Say&#305;s&#305;: &quot; &amp; harfsayisi" newline="True"/>
+            <output expression="&quot;Say&#305; Say&#305;s&#305;: &quot; &amp; sayisayisi" newline="True"/>
+            <output expression="&quot;Bo&#351;luk Say&#305;s&#305;: &quot; &amp; bosluksayisi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

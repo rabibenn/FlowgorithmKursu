@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DiziElemanlar&#305;n&#305;Al&#305;pEkranaBast&#305;rma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 05:07:07 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDU6MDE6NDUgw5ZTOzIwOTQ="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDU6MDc6MDcgw5ZTOzI7MjIwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="dizim" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="i+1 &amp; &quot;. eleman&#305; giriniz.&quot;" newline="True"/>
+                <input variable="dizim[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="i+1 &amp; &quot;. eleman&#305;m: &quot;" newline="False"/>
+                <output expression="dizim[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

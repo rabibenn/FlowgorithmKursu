@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="RastgeleHarflerdenKelimeOlu&#351;turma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 07:39:59 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6NDcgw5ZTOzIxMDI="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6Mzc6Mjkgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6NDUgw5ZTO1N0cmluZ8SwZmFkZW5pblRlcnNpbmlZYXpkxLFybWEuZnByZzs4MzM3"/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6Mzk6NTkgw5ZTOzI7MjIyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="harf, kelime" type="String" array="False" size=""/>
+            <assign variable="harf" expression="&quot;abc&#231;defgh&#305;ijklmno&#246;prs&#351;tu&#252;vyz&quot;"/>
+            <assign variable="kelime" expression="&quot; &quot;"/>
+            <for variable="i" start="0" end="5" direction="inc" step="1">
+                <assign variable="kelime" expression="kelime &amp; Char(harf, Random(20))"/>
+            </for>
+            <output expression="kelime" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

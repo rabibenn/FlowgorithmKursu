@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#214;&#287;renciBoylar&#305;n&#305;Kar&#351;&#305;la&#351;t&#305;rma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 05:00:53 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTM7MDk6NTE6MzQgw5ZTOzIwOTU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDQ6NTU6MDUgw5ZTOzM7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDQ6NDM6NDIgw5ZTOzQzNjM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDU6MDA6NTMgw5ZTOzU7MjIwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#214;&#287;rencilerin numaralar&#305;n&#305; ve boylar&#305;n&#305; al&#305;p 150 cm'ye en yak&#305;n olan&#305; numaras&#305; ile birlikte ekrana yazd&#305;ran program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="numara, boy, ogrsayisi, minno, minboy, fark" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#214;&#287;rencinin say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="ogrsayisi"/>
+            <assign variable="numara" expression="0"/>
+            <assign variable="boy" expression="0"/>
+            <assign variable="minno" expression="numara"/>
+            <assign variable="minboy" expression="boy"/>
+            <assign variable="fark" expression="Abs(boy - 150)"/>
+            <while expression="ogrsayisi != 0">
+                <output expression="&quot;&#214;&#287;rencinin numaras&#305;n&#305; giriniz.&quot;" newline="True"/>
+                <input variable="numara"/>
+                <output expression="&quot;&#214;&#287;rencinin boyunu giriniz.&quot;" newline="True"/>
+                <input variable="boy"/>
+                <assign variable="ogrsayisi" expression="ogrsayisi - 1"/>
+                <if expression="Abs(boy -  150) &lt; fark">
+                    <then>
+                        <assign variable="minno" expression="numara"/>
+                        <assign variable="minboy" expression="boy"/>
+                        <assign variable="fark" expression="Abs(boy - 150)"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="minno &amp; &quot;numaral&#305; &#246;&#287;renci &quot; &amp; minboy &amp; &quot; boyuyla 150cm'e en yak&#305;nd&#305;r.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

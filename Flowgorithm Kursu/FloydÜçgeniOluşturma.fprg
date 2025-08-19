@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Floyd&#220;&#231;geniOlu&#351;turma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 06:58:17 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDY6NDc6MzQgw5ZTOzIxMDM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDY6NTc6NDEgw5ZTOzI7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDY6NDc6NDUgw5ZTO1NhecSxS3VsbGFuYXJha1RlcnNZYXLEsW1QaXJhbWl0T2x1xZ90dXJtYS5mcHJnOzk2MDk="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDY6NTg6MTcgw5ZTOzI7MjIxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, sayi, satir" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="1"/>
+            <output expression="&quot;L&#252;tfen sat&#305;r say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="satir"/>
+            <for variable="i" start="1" end="satir" direction="inc" step="1">
+                <for variable="j" start="1" end="i" direction="inc" step="1">
+                    <output expression="sayi &amp; &quot; &quot;" newline="False"/>
+                    <assign variable="sayi" expression="sayi+1"/>
+                </for>
+                <output expression="&quot; &quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

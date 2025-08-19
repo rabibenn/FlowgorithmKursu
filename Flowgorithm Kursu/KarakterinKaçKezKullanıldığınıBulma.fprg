@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="KarakterinKa&#231;KezKullan&#305;ld&#305;&#287;&#305;n&#305;Bulma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 08:14:11 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6MzQgw5ZTOzIwOTg="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDg6MDU6Mzcgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDc6MzI6MTQgw5ZTO0PDvG1sZXlpS2VsaW1lS2VsaW1lQXnEsXJtYS5mcHJnOzc3NzM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDg6MTQ6MTEgw5ZTOzI7MjIwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, sayac" type="Integer" array="False" size=""/>
+            <declare name="message, karakter" type="String" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <assign variable="message" expression="&quot;Programlamay&#305; &#231;ok seviyorum.&quot;"/>
+            <output expression="&quot;&#304;stedi&#287;iniz karakteri giriniz.&quot;" newline="True"/>
+            <input variable="karakter"/>
+            <for variable="i" start="0" end="Len(message)-1" direction="inc" step="1">
+                <if expression="Char(message,i) == karakter">
+                    <then>
+                        <assign variable="sayac" expression="sayac+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Girmi&#351; oldu&#287;unuz &quot; &amp; karakter &amp; &quot; karakteri &quot; &amp; sayac &amp; &quot; defa kullan&#305;lm&#305;&#351;t&#305;r.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
