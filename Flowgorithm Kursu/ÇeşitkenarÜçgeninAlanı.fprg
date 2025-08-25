@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#199;e&#351;itkenar&#220;&#231;geninAlan&#305;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 05:09:44 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MDI6Mzcgw5ZTOzIwOTM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MDk6NDQgw5ZTOzI7MjIwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, sonuc" type="Real" array="False" size=""/>
+            <output expression="&quot;&#220;&#231; kenar&#305;n uzunluklar&#305;n&#305; s&#305;ras&#305; ile giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="sonuc" expression="alan(a, b, c)"/>
+            <output expression="&quot;&#220;&#231;genin alan&#305;: &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+    <function name="alan" type="Real" variable="alan">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="c" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="alan, u" type="Real" array="False" size=""/>
+            <assign variable="u" expression="(a + b + c) / 2"/>
+            <assign variable="alan" expression="Sqrt(u*(u-a)*(u-b)*(u-c))"/>
+        </body>
+    </function>
+</flowgorithm>

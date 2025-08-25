@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="B&#246;l&#252;mKalanDe&#287;erleriniBulma(Fonksiyon)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 04:10:34 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6MDY6NDIgw5ZTOzIwOTI="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6MDk6MDEgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDEtMzA7MDg6NTE6MzAgw5ZTO0LDtmxtZcSwxZ9sZW1pLmZwcmc7NjU4Mw=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6MTA6MzQgw5ZTOzI7MjE5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bolunen, bolen" type="Integer" array="False" size=""/>
+            <output expression="&quot;B&#246;l&#252;nen say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="bolunen"/>
+            <output expression="&quot;B&#246;len say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="bolen"/>
+            <call expression="bolmeislemi(bolunen,bolen)"/>
+        </body>
+    </function>
+    <function name="bolmeislemi" type="None" variable="">
+        <parameters>
+            <parameter name="bolunen" type="Integer" array="False"/>
+            <parameter name="bolen" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="bolum, kalan" type="Integer" array="False" size=""/>
+            <assign variable="bolum" expression="bolunen/bolen"/>
+            <assign variable="kalan" expression="bolunen%bolen"/>
+            <output expression="&quot;B&#246;l&#252;m: &quot; &amp; bolum" newline="True"/>
+            <output expression="&quot;Kalan: &quot; &amp; kalan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

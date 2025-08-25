@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M&#252;kemmelSay&#305;y&#305;Bulma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-24 11:01:45 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTA6MzM6MTEgw5ZTOzIwODQ="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTE6MDE6NDUgw5ZTOzI7MjE5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="sonuc" expression="mukemmel(sayi)"/>
+            <if expression="sonuc == 1">
+                <then>
+                    <output expression="&quot;Say&#305; ger&#231;ekten m&#252;kemmel.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305; m&#252;kemmel de&#287;il.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="mukemmel" type="Integer" variable="sonuc">
+        <parameters>
+            <parameter name="sayi" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc, toplam, i" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i &lt;= (sayi/2)">
+                <if expression="sayi % i == 0">
+                    <then>
+                        <assign variable="toplam" expression="toplam + i"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <if expression="toplam == sayi">
+                <then>
+                    <assign variable="sonuc" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="sonuc" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

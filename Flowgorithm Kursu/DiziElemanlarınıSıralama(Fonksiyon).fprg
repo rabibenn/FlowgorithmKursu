@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DiziElemanlar&#305;n&#305;S&#305;ralama(Fonksiyon)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 05:23:51 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MTA6NDAgw5ZTOzIwODY="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MjM6NDAgw5ZTOzI7UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MTA6NDIgw5ZTO0RpemlFbGVtYW5sYXLEsW5kYW5LYXnEsXRTaWxtZS5mcHJnOzgxMzc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MjM6NTEgw5ZTOzI7MjIwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <declare name="dizim" type="Integer" array="True" size="100"/>
+            <output expression="&quot;Dizinin eleman say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="i+1 &amp; &quot;. eleman&#305; giriniz.&quot;" newline="True"/>
+                <input variable="dizim[i]"/>
+            </for>
+            <output expression="&quot;Girdi&#287;iniz elemanlar k&#252;&#231;&#252;kten b&#252;y&#252;&#287;e s&#305;ralan&#305;yor...&quot;" newline="True"/>
+            <call expression="sirala(dizim,n)"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="dizim[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="sirala" type="None" variable="">
+        <parameters>
+            <parameter name="dizim" type="Integer" array="True"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i, j, gecici" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <for variable="j" start="0" end="n-2-i" direction="inc" step="1">
+                    <if expression="dizim[j]&gt;dizim[j+1]">
+                        <then>
+                            <assign variable="gecici" expression="dizim[j]"/>
+                            <assign variable="dizim[j]" expression="dizim[j+1]"/>
+                            <assign variable="dizim[j+1]" expression="gecici"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

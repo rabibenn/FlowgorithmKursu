@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="SaatDakikaSaniyeHesaplama(Fonksiyon)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 04:47:25 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6Mzg6MzIgw5ZTOzIwOTY="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6NDc6MjUgw5ZTOzI7MjIwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Saniye olarak girilen de&#287;eri saat:dakika:saniye olarak yazan program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="saniye" type="Integer" array="False" size=""/>
+            <output expression="&quot;Saniye de&#287;erini girinz.&quot;" newline="True"/>
+            <input variable="saniye"/>
+            <call expression="cevir(saniye)"/>
+        </body>
+    </function>
+    <function name="cevir" type="None" variable="">
+        <parameters>
+            <parameter name="saniye" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="saat, dk, sn, zaman" type="Integer" array="False" size=""/>
+            <assign variable="saat" expression="saniye / 3600"/>
+            <assign variable="zaman" expression="saniye % 3600"/>
+            <assign variable="dk" expression="zaman / 60"/>
+            <assign variable="sn" expression="zaman % 60"/>
+            <output expression="saat &amp; &quot;.&quot; &amp; dk &amp; &quot;.&quot; &amp; sn" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fonksiyon&#304;leD&#246;rt&#304;&#351;lem"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-24 09:39:22 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDY6MzI6MDkgw5ZTOzIwOTU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDk6Mzk6MjIgw5ZTOzI7MjIwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <declare name="sonuc" type="Real" array="False" size=""/>
+            <declare name="islem" type="String" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen yapmak istedi&#287;iniz i&#351;leme ait operat&#246;r&#252; yaz&#305;n&#305;z.(+,-,/,*)&quot;" newline="True"/>
+            <input variable="islem"/>
+            <output expression="&quot;L&#252;tfen iki adet say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <input variable="sayi2"/>
+            <call expression="dortislem(sayi1,sayi2,islem)"/>
+            <assign variable="sonuc" expression="dortislem(sayi1,sayi2,islem)"/>
+            <output expression="&quot;&#304;&#351;lem sonucu: &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+    <function name="dortislem" type="Real" variable="sonuc">
+        <parameters>
+            <parameter name="sayi1" type="Integer" array="False"/>
+            <parameter name="sayi2" type="Integer" array="False"/>
+            <parameter name="islem" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Real" array="False" size=""/>
+            <if expression="islem == &quot;+&quot;">
+                <then>
+                    <assign variable="sonuc" expression="sayi1 + sayi2"/>
+                </then>
+                <else>
+                    <if expression="islem == &quot;-&quot;">
+                        <then>
+                            <assign variable="sonuc" expression="sayi1 - sayi2"/>
+                        </then>
+                        <else>
+                            <if expression="islem == &quot;/&quot;">
+                                <then>
+                                    <assign variable="sonuc" expression="sayi1 / sayi2"/>
+                                </then>
+                                <else>
+                                    <if expression="islem == &quot;*&quot;">
+                                        <then>
+                                            <assign variable="sonuc" expression="sayi1 * sayi2"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Yanl&#305;&#351; operat&#246;r girdiniz.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

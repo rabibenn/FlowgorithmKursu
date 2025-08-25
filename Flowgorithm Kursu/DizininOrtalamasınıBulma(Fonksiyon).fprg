@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DizininOrtalamas&#305;n&#305;Bulma(Fonksiyon)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 04:33:37 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6MTA6NDIgw5ZTOzIwODc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6MTE6NDMgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMTk7MDU6MjA6MDggw5ZTO0RpemluaW5PcnRhbGFtYXPEsW7EsUJ1bG1hLmZwcmc7Nzc2MA=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6MzM6Mzcgw5ZTOzM7MjIwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dizi" type="Integer" array="True" size="100"/>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <declare name="ort" type="Real" array="False" size=""/>
+            <output expression="&quot;Diziniz ka&#231; elemanl&#305; olacak?&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="i+1 &amp; &quot;. eleman&#305; giriniz.&quot;" newline="True"/>
+                <input variable="dizi[i]"/>
+            </for>
+            <assign variable="ort" expression="ortalamabul(dizi, n)"/>
+            <output expression="&quot;Dizideki elemanlar&#305;n ortalamas&#305;: &quot; &amp; ort" newline="False"/>
+        </body>
+    </function>
+    <function name="ortalamabul" type="Real" variable="sonuc">
+        <parameters>
+            <parameter name="dizi" type="Integer" array="True"/>
+            <parameter name="boyut" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Real" array="False" size=""/>
+            <declare name="toplam, i" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="i" start="0" end="boyut - 1" direction="inc" step="1">
+                <assign variable="toplam" expression="toplam + dizi[i]"/>
+            </for>
+            <assign variable="sonuc" expression="toplam/boyut"/>
+        </body>
+    </function>
+</flowgorithm>

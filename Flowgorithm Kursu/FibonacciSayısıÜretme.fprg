@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FibonacciSay&#305;s&#305;&#220;retme"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 03:42:56 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTE6MzM6Mzkgw5ZTOzIwOTU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDM6NDI6NTYgw5ZTOzI7MjIwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Her say&#305;n&#305;n kendinen &#246;nceki say&#305; ile toplanmas&#305; sonucu olu&#351;an say&#305; dizisine fibonacci dizisi denir.&#13;&#10;&#13;&#10;Klavyeden ka&#231; adet fibonacci say&#305;s&#305;  &#252;retilece&#287;i bilgisi girilerek say&#305;lar&#305;n &#252;retilmesini sa&#287;layan program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z.&#13;&#10;&#13;&#10;&#304;lk iki Fibonacci say&#305;s&#305;; 0 1"/>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen dizinin ka&#231; elemanl&#305; olmas&#305;n&#305; istedi&#287;inizi yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <call expression="fibonacci(sayi)"/>
+        </body>
+    </function>
+    <function name="fibonacci" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ilk, ikinci, sonraki, i" type="Integer" array="False" size=""/>
+            <assign variable="ilk" expression="0"/>
+            <assign variable="ikinci" expression="1"/>
+            <output expression="&quot;Fibonacci Dizim&quot;" newline="True"/>
+            <for variable="i" start="0" end="n - 1" direction="inc" step="1">
+                <if expression="i &lt;= 1">
+                    <then>
+                        <assign variable="sonraki" expression="i"/>
+                    </then>
+                    <else>
+                        <assign variable="sonraki" expression="ilk + ikinci"/>
+                        <assign variable="ilk" expression="ikinci"/>
+                        <assign variable="ikinci" expression="sonraki"/>
+                    </else>
+                </if>
+                <output expression="sonraki" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

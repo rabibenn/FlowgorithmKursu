@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="GirilenSay&#305;yaKadarOlanTekSay&#305;lar&#305;Listeleme"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-24 11:33:31 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTE6Mjg6NDIgw5ZTOzIwOTM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTE6MzM6MzEgw5ZTOzI7MjE5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Pozitif bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <call expression="teksayilar(sayi)"/>
+        </body>
+    </function>
+    <function name="teksayilar" type="None" variable="">
+        <parameters>
+            <parameter name="sayi" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <while expression="i &lt;= sayi">
+                <if expression="i % 2  == 1">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

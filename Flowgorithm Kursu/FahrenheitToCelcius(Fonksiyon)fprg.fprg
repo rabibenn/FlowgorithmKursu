@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FahrenheitToCelcius(Fonksiyon)fprg"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 05:02:30 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6NDc6MzMgw5ZTOzIwOTc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MDI6MzAgw5ZTOzI7MjE5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Kullan&#305;c&#305;n&#305;n Celcius olarak girdi&#287;i de&#287;eri Fahrenheit'e Fahrenheit olarak girdi&#287;i de&#287;eri Celcius'a d&#246;n&#252;&#351;t&#252;ren program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z.&#13;&#10;&#13;&#10;1-&gt; Fahrenheit to Celcius&#13;&#10;2-&gt; Celcius to Fahrenheit"/>
+            <declare name="f, c, secim, sonuc" type="Real" array="False" size=""/>
+            <output expression="&quot;&#304;&#351;lem se&#231;iniz.&quot;" newline="True"/>
+            <output expression="&quot;1-&gt; Fahrenheit to Celcius&quot;" newline="True"/>
+            <output expression="&quot;2-&gt; Celcius to Fahrenheit&quot;" newline="True"/>
+            <input variable="secim"/>
+            <if expression="secim == 1">
+                <then>
+                    <output expression="&quot;Fahrenheit de&#287;erini giriniz.&quot;" newline="True"/>
+                    <input variable="f"/>
+                    <assign variable="sonuc" expression="FtoC(f)"/>
+                    <output expression="f &amp; &quot;F = &quot; &amp; sonuc &amp; &quot; C&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="secim == 2">
+                        <then>
+                            <output expression="&quot;Celcius de&#287;erini giriniz.&quot;" newline="True"/>
+                            <input variable="c"/>
+                            <assign variable="sonuc" expression="CtoF(c)"/>
+                            <output expression="c &amp; &quot;C = &quot; &amp; sonuc &amp; &quot; F&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Ge&#231;ersiz bir i&#351;lem se&#231;tiniz.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="CtoF" type="Real" variable="sonuc">
+        <parameters>
+            <parameter name="c" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Real" array="False" size=""/>
+            <assign variable="sonuc" expression="1.8 * c + 32"/>
+        </body>
+    </function>
+    <function name="FtoC" type="Real" variable="sonuc">
+        <parameters>
+            <parameter name="f" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Real" array="False" size=""/>
+            <assign variable="sonuc" expression="0.5555 * (f - 32)"/>
+        </body>
+    </function>
+</flowgorithm>

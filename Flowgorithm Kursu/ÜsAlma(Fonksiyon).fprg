@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#220;sAlma(Fonksiyon)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-24 10:06:58 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTA6MDM6MjUgw5ZTOzIwODY="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTA6MDM6MzMgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDk6Mzk6MzIgw5ZTO0Zha3TDtnJpeWVsSGVzYWLEsS5mcHJnOzY4NjI="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTA6MDU6NDUgw5ZTOzM7UmFiaTtSQUJJOzIwMjUtMDgtMTg7MDY6MDQ6MDUgw5ZTO8Occ0FsbWEod2hpbGUpLmZwcmc7NjIyMA=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTA6MDY6NTggw5ZTOzI7MjIwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="us, taban, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#220;sl&#252; say&#305;n&#305;z&#305;n taban&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="taban"/>
+            <output expression="&quot;&#220;sl&#252; say&#305;n&#305;z&#305;n &#252;ss&#252;n&#252; giriniz.&quot;" newline="True"/>
+            <input variable="us"/>
+            <call expression="UsAl(us,taban)"/>
+            <assign variable="sonuc" expression="UsAl(us,taban)"/>
+            <output expression="&quot;Girdi&#287;iniz &#252;sl&#252; say&#305;n&#305;n sonucu: &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+    <function name="UsAl" type="Integer" variable="sonuc">
+        <parameters>
+            <parameter name="us" type="Integer" array="False"/>
+            <parameter name="taban" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sonuc" expression="1"/>
+            <while expression="us != 0">
+                <assign variable="sonuc" expression="sonuc * taban"/>
+                <assign variable="us" expression="us - 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

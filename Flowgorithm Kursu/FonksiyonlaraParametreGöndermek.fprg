@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FonksiyonlaraParametreG&#246;ndermek"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-24 06:32:03 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDY6Mjg6NTkgw5ZTOzIxMDU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDY6Mjk6MDEgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDY6MTI6MTggw5ZTO0ZvbmtzaXlvbmxhcmFQYXJhbWV0cmVHw7ZuZGVybWVrLmZwcmc7ODI1Mw=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDY6MzI6MDMgw5ZTOzI7MjE5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#304;ki adet tam say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <call expression="print(a, b)"/>
+        </body>
+    </function>
+    <function name="print" type="None" variable="">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+            <parameter name="y" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;A de&#287;erim: &quot; &amp; x" newline="True"/>
+            <output expression="&quot;B de&#287;erim: &quot; &amp; y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

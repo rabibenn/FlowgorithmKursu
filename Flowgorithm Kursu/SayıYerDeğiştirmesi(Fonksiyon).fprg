@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Say&#305;YerDe&#287;i&#351;tirmesi(Fonksiyon)"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 04:06:23 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6MDE6MDEgw5ZTOzIwODI="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6MDI6MjAgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMDk7MTI6MDM6MjMgw5bDljtTYXnEsVllckRlxJ9pxZ90aXJtZXNpLmZwcmc7NzU5NA=="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDQ6MDY6MjMgw5ZTOzI7MjIwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen a say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;L&#252;tfen b say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Yer de&#287;i&#351;tirmeden &#246;nce a say&#305;s&#305;: &quot; &amp;a" newline="True"/>
+            <output expression="&quot;Yer de&#287;i&#351;tirmeden &#246;nce b say&#305;s&#305;: &quot; &amp;b" newline="True"/>
+            <call expression="yerdegistir(a, b)"/>
+        </body>
+    </function>
+    <function name="yerdegistir" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="degisim" type="Integer" array="False" size=""/>
+            <assign variable="degisim" expression="a"/>
+            <assign variable="a" expression="b"/>
+            <assign variable="b" expression="degisim"/>
+            <output expression="&quot;Yer de&#287;i&#351;tirmeden sonra a say&#305;s&#305;: &quot; &amp;a" newline="True"/>
+            <output expression="&quot;Yer de&#287;i&#351;tirmeden sonra b say&#305;s&#305;: &quot; &amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

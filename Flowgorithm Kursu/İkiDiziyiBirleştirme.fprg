@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#304;kiDiziyiBirle&#351;tirme"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 07:06:26 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MDk6NTYgw5ZTOzIxMDE="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDY6NTI6Mzcgw5ZTOzE7UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MTA6NDIgw5ZTO0RpemlFbGVtYW5sYXLEsW5kYW5LYXnEsXRTaWxtZS5mcHJnOzgxNDU="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDc6MDY6MjYgw5ZTOzI7MjIwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="A ve B dizilerine s&#305;ras&#305;yla N ve K adet tamsay&#305; girilemesini sa&#287;layan ve bu iki diziyi birle&#351;tirip tek bir dizi haline getiren program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="i, j, k, n" type="Integer" array="False" size=""/>
+            <declare name="a, b, birlesik" type="Integer" array="True" size="100"/>
+            <output expression="&quot;&#304;lk dizinin eleman say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="i+1 &amp; &quot;. eleman&#305; giriniz.&quot;" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;&#304;kinci dizinin eleman say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="k"/>
+            <for variable="j" start="0" end="k-1" direction="inc" step="1">
+                <output expression="j+1 &amp; &quot;. eleman&#305; giriniz.&quot;" newline="True"/>
+                <input variable="b[j]"/>
+            </for>
+            <call expression="birlestir(a, b, birlesik, n, k)"/>
+            <for variable="i" start="0" end="n+k-1" direction="inc" step="1">
+                <output expression="birlesik[i] &amp; &quot; &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+    <function name="birlestir" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="True"/>
+            <parameter name="b" type="Integer" array="True"/>
+            <parameter name="c" type="Integer" array="True"/>
+            <parameter name="n" type="Integer" array="False"/>
+            <parameter name="k" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i, j, sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="c[sayac]" expression="a[i]"/>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </for>
+            <for variable="j" start="0" end="k-1" direction="inc" step="1">
+                <assign variable="c[sayac]" expression="b[j]"/>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

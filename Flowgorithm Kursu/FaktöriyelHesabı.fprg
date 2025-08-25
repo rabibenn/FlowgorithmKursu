@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fakt&#246;riyelHesab&#305;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-24 10:02:49 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDk6Mzk6MzIgw5ZTOzIxMDE="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTA6MDI6NDkgw5ZTOzI7MjIwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Girilen tam say&#305;n&#305;n fakt&#246;riyelini fonksiyon kullanarak hesaplayan program&#305;n algoritmas&#305;n&#305; yaz&#305;n&#305;z."/>
+            <declare name="sayi, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;Fakt&#246;riyelinin al&#305;nmas&#305;n&#305; istedi&#287;iniz say&#305;y&#305; yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <call expression="faktoriyelal(sayi)"/>
+            <assign variable="sonuc" expression="faktoriyelal(sayi)"/>
+            <output expression="&quot;Say&#305;n&#305;z&#305;n fakt&#246;riyeli: &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+    <function name="faktoriyelal" type="Integer" variable="sonuc">
+        <parameters>
+            <parameter name="sayi" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sonuc" expression="sayi"/>
+            <while expression="sayi != 1">
+                <assign variable="sonuc" expression="sonuc * (sayi - 1)"/>
+                <assign variable="sayi" expression="sayi - 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

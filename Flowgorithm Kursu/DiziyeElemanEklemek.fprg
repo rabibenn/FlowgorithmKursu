@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DiziyeElemanEklemek"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-25 06:49:42 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MTA6Mzcgw5ZTOzIwOTI="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6NDc6NDQgw5ZTOzI7UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDU6MTA6NDIgw5ZTO0RpemlFbGVtYW5sYXLEsW5kYW5LYXnEsXRTaWxtZS5mcHJnOzgxNDc="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjU7MDY6NDk6NDIgw5ZTOzI7MjIxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sira, deger" type="Integer" array="False" size=""/>
+            <declare name="dizim" type="Integer" array="True" size="100"/>
+            <output expression="&quot;Dizinin eleman say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="i+1 &amp; &quot;. eleman&#305; giriniz.&quot;" newline="True"/>
+                <input variable="dizim[i]"/>
+            </for>
+            <output expression="&quot;Dizi elemanlar&#305;&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="dizim[i] &amp; &quot; &quot;" newline="False"/>
+            </for>
+            <output expression="&quot; &quot;" newline="True"/>
+            <output expression="&quot;Hangi s&#305;radaki eleman eklenece&#287;ini yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="sira"/>
+            <output expression="&quot;Eklenecek say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="deger"/>
+            <call expression="ekle(dizim, sira, deger, n)"/>
+        </body>
+    </function>
+    <function name="ekle" type="None" variable="">
+        <parameters>
+            <parameter name="dizim" type="Integer" array="True"/>
+            <parameter name="sira" type="Integer" array="False"/>
+            <parameter name="deger" type="Integer" array="False"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <if expression="sira &lt;= n + 1">
+                <then>
+                    <for variable="i" start="n-1" end="sira-1" direction="dec" step="1">
+                        <assign variable="dizim[i+1]" expression="dizim[i]"/>
+                    </for>
+                    <assign variable="dizim[sira-1]" expression="deger"/>
+                    <output expression="&quot;Eleman eklendikten sonra&quot;" newline="True"/>
+                    <for variable="i" start="0" end="n" direction="inc" step="1">
+                        <output expression="dizim[i] &amp; &quot; &quot;" newline="False"/>
+                    </for>
+                </then>
+                <else>
+                    <output expression="&quot;Ge&#231;erli bir s&#305;ra numaras&#305; giriniz.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

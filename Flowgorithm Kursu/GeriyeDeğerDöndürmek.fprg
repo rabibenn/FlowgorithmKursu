@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FonksiyonlaraGiri&#351;"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-24 06:29:26 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDY6MTI6MTggw5ZTOzIwOTM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MDY6Mjk6MjYgw5ZTOzQ7MjIxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#304;ki adet tam say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="sonuc" expression="hesapla(a, b)"/>
+            <output expression="&quot;Say&#305;lar&#305;n Toplam&#305;: &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+    <function name="hesapla" type="Integer" variable="sonuc">
+        <parameters>
+            <parameter name="ilk" type="Integer" array="False"/>
+            <parameter name="ikinci" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sonuc" expression="ilk + ikinci"/>
+        </body>
+    </function>
+</flowgorithm>

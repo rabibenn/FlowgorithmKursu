@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="B&#252;y&#252;kSay&#305;y&#305;Bulma"/>
+        <attribute name="authors" value="Rabi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-24 11:24:51 &#214;S"/>
+        <attribute name="created" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTE6MDE6NTAgw5ZTOzIwODM="/>
+        <attribute name="edited" value="UmFiaTtSQUJJOzIwMjUtMDgtMjQ7MTE6MjQ6NTEgw5ZTOzI7MjE5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen iki adet say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <input variable="sayi2"/>
+            <assign variable="sonuc" expression="buyukolan(sayi1,sayi2)"/>
+            <if expression="sonuc == 1">
+                <then>
+                    <output expression="sayi1 &amp; &quot; b&#252;y&#252;kt&#252;r &quot; &amp; sayi2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sonuc == 0">
+                        <then>
+                            <output expression="sayi2 &amp; &quot; b&#252;y&#252;kt&#252;r &quot; &amp; sayi1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#304;ki say&#305; e&#351;ittir.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="buyukolan" type="Integer" variable="sonuc">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Integer" array="False" size=""/>
+            <if expression="a &gt; b">
+                <then>
+                    <assign variable="sonuc" expression="1"/>
+                </then>
+                <else>
+                    <if expression="a &lt; b">
+                        <then>
+                            <assign variable="sonuc" expression="0"/>
+                        </then>
+                        <else>
+                            <assign variable="sonuc" expression="2"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
